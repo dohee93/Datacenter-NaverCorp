@@ -1,3 +1,264 @@
 .container-wrap {
    padding-top: 4rem;
+   background-color: rgb(0,0,0);
 }
+/* Main Grid Base Line */
+.container {
+   width: 100%;
+   height: 100%;
+   position: relative;
+   font-family: 'Calibre-Regular', 'NanumSquare-R', sans-serif;
+}
+.container .grid-base-line:before {
+   content: '';
+   position: absolute;
+   left: 25%;
+   width: 25%;
+   height: 100%;
+   opacity: 1;
+   border-left: 1px solid#272727;
+   display: block;
+}
+.container .grid-base-line:after {
+   content: '';
+   position: absolute;
+   display: block;
+   width: 25%;
+   height: 100%;
+   left: 50%;
+   border-left: 1px solid#272727;
+   border-right: 1px solid#272727;
+   opacity: 1;
+}
+
+/* Hero Section */
+.main-contents #hero {
+   padding: 2.5rem 2.5rem 0 2.5rem;
+   position: relative;
+}
+/* Hero Image */
+.hero-image {
+   background-image: url(../img/hero-01.jpg);
+   height: 31.25vw;
+   background-size: cover;
+   background-position: 50%;
+   background-repeat: no-repeat;
+   position: relative;
+   overflow: hidden;
+}
+/* Hero Text */
+.hero-text {
+   padding: 5vw 2.5rem 0 2.5rem;
+   position: relative;
+}
+.hero-text .hero-title {
+   font-size: 3.625rem;
+   line-height: 4.5rem;
+   letter-spacing: -.125rem;
+   width: 34.374rem;
+   font-weight: 800;
+   font-family: 'NanumSquare-EB';
+   color: rgb(255,255,255);
+}
+.hero-text .hero-subtitle {
+   font-size: 1.125rem;
+   line-height: 1.875rem;
+   letter-spacing: -0.03125rem;
+   margin-top: .625rem;
+   margin-bottom: 1.25rem;
+   color: rgb(238,238,238);
+}
+.hero-text .view-more {
+   border: 1px solid rgb(189,189,189);
+   width: 14.0625rem;
+   height: 3.5rem;
+   font-size: 1.375rem;
+   line-height: 3.25rem;
+   font-family: 'Calibre-Regular', 'NanumSquare-R', sans-serif;
+   font-weight: 400;
+   padding: 0 1.25rem;
+   margin-top: 2.0625rem;
+   position: relative;
+   transition: background-color .2s, border-color .2s;
+}
+.hero-text .view-more:hover {
+   background-color: #007aff;
+   border-color: #007aff;
+}
+.hero-text .view-more p {
+   transform: translateY(.2em);
+   color: rgb(255,255,255);
+   display: inline-block;
+}
+.view-more [icon] {
+   position: absolute;
+   right: 1.25rem;
+   top: 50%;
+   transform: translateY(-50%);
+}
+[icon].icon-arrow-right-white {
+   width: 1.75rem;
+   height: 1.75rem;
+   background-image: url(../img/arrow-right-white.svg);
+   background-size: contain;
+}
+/* Hero Slide Timer */
+#hero .hero-slide-timer {
+   position: absolute;
+   left: 0;
+   bottom: 1.25rem;
+   width: 100%;
+   z-index: 1;
+   padding: 0 4.5625rem;
+}
+#hero .hero-slide-timer ul > li {
+   padding: .5rem .4375rem .625rem;
+   width: 24.8%;
+   position: relative;
+   display: inline-block;
+   vertical-align: top;
+}
+#hero .hero-slide-timer ul > li .bar {
+   margin-top: .3125rem;
+   height: .125rem;
+   background-color: rgba(224,224,224,0.4);
+   position: relative;
+}
+#hero .hero-slide-timer ul > li .bar .fill {
+   height: .125rem;
+   background-color: rgb(255,255,255);
+   width: 0;
+}
+#hero .hero-slide-timer ul > li .bar .over {
+   position: absolute;
+   transition: width .4s;
+}
+#hero .hero-slide-timer ul > li .bar:hover .fill {
+   width: 100%;
+   background-color: rgb(255,255,255);
+   transition: width .4s;
+}
+
+
+/* Section 01 */
+#section-01 {
+   padding-top: 5.25rem;
+   position: relative;
+}
+#section-01 h2 {
+   position: absolute;
+   padding: 2.5rem;
+}
+#section-01 .visual {
+   position: relative;
+   height: 55.375vw;
+   width: auto;
+   margin: 0;
+}
+#section-01 .visual li {
+   position: absolute;
+   display: block;
+}
+#section-01 .visual li:before {
+   content: '';
+   display: block;
+}
+/* Section01 - li (1) */
+#section-01 .visual li:first-of-type {
+   left: 54.9375vw;
+   top: 7.0625vw;
+   padding-left: 20vw;
+}
+#section-01 .visual li:first-of-type:before {
+   width: 20vw;
+   height: 28.0625vw;
+   background-image: url(../img/s1-p1.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+#section-01 .visual li:first-of-type h4,
+#section-01 .visual li:first-of-type .visual-arrow {
+   padding-left: 1.25rem;
+}
+/* Section01 - li (2) */
+#section-01 .visual li:nth-of-type(2) {
+   left: 32.25vw;
+   top: 26.3125vw;
+}
+#section-01 .visual li:nth-of-type(2):before {
+   width: 30.8125vw;
+   height: 19.25vw;
+   background-image: url(../img/s1-p2.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+#section-01 .visual li:nth-of-type(2) h4 {
+   position: absolute;
+   left: -12.5rem;
+   top: 0;
+   width: 12.5rem;
+}
+#section-01 .visual li:nth-of-type(2) .visual-arrow {
+   position: absolute;
+   left: -12.5rem;
+   top: 5.3125rem;
+   width: 12.5rem;
+}
+/* Section01 - li (3) */
+#section-01 .visual li:nth-of-type(3) {
+   left: 70vw;
+   top: 17.875vw;
+   padding-top: 20vw;
+}
+#section-01 .visual li:nth-of-type(3):before {
+   width: 20vw;
+   height: 20vw;
+   background-image: url(../img/s1-p3.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+#section-01 .visual li:nth-of-type(3) h4 {
+   margin-top: 1.25rem;
+}
+
+
+
+/* Section01 - arrow right white*/
+#section-01 .visual li .visual-arrow { 
+   font-size: 1.375rem;
+   line-height: 2.5rem;
+   letter-spacing: 0;
+   margin-top: .625rem;
+}
+#section-01 .visual li .visual-arrow p { 
+   display: inline-block;
+}
+#section-01 .visual li .visual-arrow:after { 
+   content: '';
+   display: inline-block;
+   width: 1.5rem;
+   height: 1.5rem;
+   background-image: url(../img/arrow-right-white.svg);
+   background-size: contain;
+   margin-left: 1.25rem;
+   vertical-align: middle;
+}
+
+
+/* Section01 - li hover */
+#section-01 .visual li:hover .visual-arrow {
+   color: #007aff;
+}
+#section-01 .visual li:hover .visual-arrow:after {
+   background-image: url(../img/arrow-right-blue.svg);
+}
+

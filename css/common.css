@@ -37,4 +37,17 @@
     color: rgb(224,224,224);
  }
 
- 
+ h2 {
+   font-size: 3rem;
+   line-height: 4rem;
+   letter-spacing: 0;
+   color: rgb(255,255,255);
+   font-weight: 700;
+ }
+
+ h4 {
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  letter-spacing: -.0625rem;
+  font-weight: 700;
+}
