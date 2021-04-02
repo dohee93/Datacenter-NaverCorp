@@ -12,6 +12,7 @@
 .container .grid-base-line:before {
    content: '';
    position: absolute;
+   top: 0;
    left: 25%;
    width: 25%;
    height: 100%;
@@ -25,6 +26,7 @@
    display: block;
    width: 25%;
    height: 100%;
+   top: 0;
    left: 50%;
    border-left: 1px solid#272727;
    border-right: 1px solid#272727;
@@ -68,7 +70,7 @@
    margin-bottom: 1.25rem;
    color: rgb(238,238,238);
 }
-.hero-text .view-more {
+.view-more {
    border: 1px solid rgb(189,189,189);
    width: 14.0625rem;
    height: 3.5rem;
@@ -85,7 +87,7 @@
    background-color: #007aff;
    border-color: #007aff;
 }
-.hero-text .view-more p {
+.view-more p {
    transform: translateY(.2em);
    color: rgb(255,255,255);
    display: inline-block;
@@ -262,3 +264,136 @@
    background-image: url(../img/arrow-right-blue.svg);
 }
 
+
+/* Section 02 */
+
+#section-02 {
+   padding: 7.5rem 0 6.25rem;
+   position: relative;
+   background-color: rgb(19,22,25);
+}
+/* Section 02 title */
+#section-02 h2 {
+   margin-left: 50%;
+   margin-bottom: 5rem;
+   width: 40vw;
+   padding-left: 2.5rem;
+   position: relative;
+}
+#section-02 .view-more {
+   border: none;
+   width: auto;
+   height: 3.5rem;
+   line-height: 1.125rem;
+   font-weight: 500;
+   padding: 0;
+   margin: 0;
+   position: absolute;
+   right: 0;
+   bottom: 0;
+}
+#section-02 h2 .view-more p:hover {
+   border-color: none;
+   background-color: none;
+   color: #007aff;
+}
+#section-02 .view-more p {
+   transform: translateY(.3em);
+}
+#section-02 .view-more [icon] {
+   position: relative;
+   left: 0;
+   display: inline-block;
+   margin-left: 1.5625rem;
+}
+/* Section 02 Content  */
+.cards-wrap {
+   width: 82.5vw;
+   margin: 0 auto;
+}
+.cards {
+   display: flex;
+   width: 100%;
+   height: 100%;
+}
+.card {
+   width: 33.3%;
+   padding: 0 1.25rem 2.5rem;
+   z-index: 1;
+}
+.card-inner {
+   background-color: rgb(44, 48, 54);
+   position: relative;
+   transform: translateY(0);
+   transition: transform 0.3s ease-in-out;
+}
+.card-inner:hover {
+   transform: translateY(-10px);
+}
+/* Section 02 - Card Image */
+.card-image {
+   padding-top: 60%;
+   position: relative;
+   background-color: rgb(204,204,204);
+   background-size: cover;
+   background-position: 50%;
+   background-repeat: no-repeat;
+}
+.card:nth-child(1) .card-image{
+   background-image: url(../img/20200625195053_1.png);
+}
+.card:nth-child(2) .card-image{
+   background-image: url(../img/20200625195144_1.png);
+}
+.card:nth-child(3) .card-image{
+   background-image: url(../img/20200625195326_1.png);
+}
+/* Section 02 - Card Text */
+.card-text {
+   height: 14.125rem;
+   padding: 1.25rem 1.5625rem 6.5625rem;
+   color: rgb(255,255,255);
+}
+.card-text .card-title {
+   font-size: 1.5rem;
+   line-height: 2.25rem;
+   letter-spacing: -.00625rem;
+   font-weight: 800;
+   max-height: 4.5rem;
+}
+.card-tags {
+   position: absolute;
+   left: 0;
+   bottom: 4.75rem;
+   padding: 0 1.25rem;
+}
+.card-tags a {
+   font-size: .8125rem;
+   line-height: 1.125rem;
+   padding: .2125rem .3125rem 0;
+   height: 1.375rem;
+   border: 1px solid rgb(117,117,117);
+   border-radius: .125rem;
+   color: rgb(117,117,117);
+   margin-right: .375rem;
+}
+.card-category {
+   border-top: 1px solid rgb(55,61,66);
+   padding: 1.125rem 1.5625rem;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+}
+.card-category p {
+   font-size: 1.125rem;
+   font-weight: 500;
+   line-height: 1.5rem;
+   transform: translateY(.2em);
+   display: inline-block;
+}
+.card-category i {
+   position: absolute;
+   right: 1.25rem;
+   top: 1.125rem;
+}
