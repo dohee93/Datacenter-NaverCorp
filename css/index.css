@@ -582,4 +582,200 @@
    background-image: url(../img/arrow-right-blue.svg);
 }
 
- 
+ /* Section 05 */
+#section-05 {
+   position: relative;
+}
+#section-05 ul {
+   height: 50rem;
+   position: relative;
+}
+/* Section 05 - item 01 */
+#section-05 ul li:first-of-type {
+   position: absolute;
+   width: 50%;
+   height: 100%;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
+#section-05 ul li:first-of-type:before {
+   content: '';
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-image: url(../img/s5-p1.jpg);
+   transition: all 1s;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+/* Section 05 - item 02 */
+#section-05 ul li:nth-of-type(2){
+   position: absolute;
+   width: 50%;
+   height: 50%;
+   overflow: hidden;
+   top: 0;
+   right: 0;
+}
+#section-05 ul li:nth-of-type(2):before {
+   content: '';
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-image: url(../img/s5-p2.jpg);
+   transition: all 1s;
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+}
+/* Section 05 - item 03 */
+#section-05 ul li:nth-of-type(3){
+   position: absolute;
+   width: 50%;
+   height: 50%;
+   overflow: hidden;
+   bottom: 0;
+   right: 0;
+}
+#section-05 ul li:nth-of-type(3):before {
+   content: '';
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-image: url(../img/s5-p3.jpg);
+   transition: all 1s;
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+}
+/* Section 05 - title */
+#section-05 ul li h3 {
+   position: relative;
+}
+/* Section 05 - view more button */
+#section-05 ul li .btn-more {
+   width: 19.375vw;
+   height: 7.5rem;
+   padding: 1.25rem;
+   color: #fff;
+   font-weight: 500;
+   font-size: 1.375rem;
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   background-color: #007aff;
+   display: block;
+   transition: background-color 1s;
+}
+#section-05 ul li .btn-more [icon] {
+   position: absolute;
+   right: 1.25rem;
+   bottom: 1.25rem;
+}
+/* Section 05 - hover */
+#section-05 ul li:hover .btn-more {
+   background-color: rgb(4,75,219);
+}
+#section-05 ul li:hover:before {
+   transform: scale(1.05);
+}
+
+ /* Section 06 */
+ #section-06 {
+   position: relative;
+   padding: 7.5rem 8.75rem 5rem;
+   background-color: rgb(19,22,25);
+}
+#section-06 .section-06-contents {
+   position: relative;
+}
+#section-06 .section-06-contents h3 {
+   font-size: 2.125rem;
+   letter-spacing: 0.03125rem;
+   font-weight: 500;
+   margin-bottom: 5rem;
+   padding: 0 .9375rem;
+   position: relative;
+}
+#section-06 .section-06-contents h3 a {
+   font-size: 1.375rem;
+   color: rgb(238,238,238);
+   position: absolute;
+   right: 0;
+   top: .375rem;
+}
+#section-06 .section-06-contents h3 a p {
+   display: inline-block;
+}
+#section-06 .section-06-contents h3 a [icon] {
+   margin-left: 1.5625rem;
+   transform: translateY(.2em);
+   display: inline-block;
+}
+#section-06 .section-06-contents h3 a:hover p {
+   color: rgb(7,119,255);
+}
+.section-06-slider .slide-card-wrap {
+   display: inline-block;
+   width: 27.5rem;
+   padding: 0 1.25rem;
+   vertical-align: top;
+   transition: all .3s;
+}
+.section-06-slider .slide-card-wrap .slide-card{
+   background-color: rgb(44,48,54);
+}
+
+.section-06-slider .slide-card-wrap .slide-card-img {
+   padding-top: 60%;
+   position: relative;
+   background-color: rgb(204,204,204);
+   background-size: cover;
+   background-position: 50%;
+   background-repeat: no-repeat;
+   width: 100%;
+}
+.section-06-slider .slide-card-wrap .slide-card {
+   width: 100%;
+   height: 400px;
+   position: relative;
+}
+.section-06-slider .slide-card-wrap:nth-of-type(1) .slide-card-img {
+   background-image: url(../img/s6-p1.jpg);
+}
+.section-06-slider .slide-card-wrap:nth-of-type(2) .slide-card-img {
+   background-image: url(../img/s6-p2.jpg);
+}
+.section-06-slider .slide-card-wrap:nth-of-type(1) .slide-card-content,
+.section-06-slider .slide-card-wrap:nth-of-type(2) .slide-card-content {
+   padding-top: 1.25rem;
+}
+.section-06-slider .slide-card-wrap .slide-card-content {
+   padding: 1.875rem 1.5625rem 4.375rem;
+}
+.section-06-slider .slide-card-wrap .card-category {
+   border: none;
+}
+.section-06-slider .slide-card-wrap .slide-card-title {
+   font-size: 1.5rem;
+   line-height: 2.25rem;
+   letter-spacing: -0.0625rem;
+   max-height: 4.5rem;
+   font-weight: 800;
+}
+.section-06-slider .slide-card-wrap:nth-of-type(3) .slide-card-content {
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+.section-06-slider .slide-card-wrap:nth-of-type(3) .slide-card-title {
+   margin-top: .9375rem;
+}
+.slide-card-wrap:hover {
+   transform: translateY(-10px);
+}
