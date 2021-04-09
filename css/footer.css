@@ -118,16 +118,19 @@ footer .md:after {
    height: .8125rem;
    background-image: url(../img/footer-naver.png);
    background-size: contain;
+   background-repeat: no-repeat;
 }
 .footer-bottom .footer-ci a.footer-navercloud {
    width: 7.6rem;
    height: .9375rem;
    background-image: url(../img/footer-navercloud.png);
    background-size: contain;
+   background-repeat: no-repeat;
 }
 .footer-bottom .footer-ci a.footer-ncloud {
    width: 5.6rem;
    height: 1.0625rem;
    background-image: url(../img/footer-ncp.png);
    background-size: contain;
+   background-repeat: no-repeat;
 }

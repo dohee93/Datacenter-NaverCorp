@@ -74,7 +74,6 @@ header, a {
 /* Header Dropdown Menu */
 .gnb ul .gnb-item:after {
    content: '';
-   display: block;
    position: fixed;
    left: 0;
    top: 3.9375rem;
