@@ -1,40 +1,63 @@
 /* Font Style */
 
 @font-face {
-   font-family: 'Calibre-Medium';
-   src: url("../font/Calibre-Medium.woff") format("woff");
- }
- 
- @font-face {
-   font-family: 'Calibre-Regular';
-   src: url("../font/Calibre-Regular.woff") format("woff");
- }
- 
- @font-face {
-   font-family: 'Calibre-Semibold';
-   src: url("../font/Calibre-Semibold.woff") format("woff");
- }
- 
- @font-face {
-   font-family: 'NanumSquare-B';
-   src: url("../font/NanumSquareB.woff") format("woff");
- }
- 
- @font-face {
-   font-family: 'NanumSquare-EB';
-   src: url("../font/NanumSquareEB.woff") format("woff");
- }
+  font-family: 'Calibre-Medium';
+  src: url("../font/Calibre-Medium.woff") format("woff");
+}
 
- @font-face {
-   font-family: 'NanumSquare-R';
-   src: url("../font/NanumSquareR.woff") format("woff");
- }
- 
+@font-face {
+  font-family: 'Calibre-Regular';
+  src: url("../font/Calibre-Regular.woff") format("woff");
+}
 
- body {
-    font-family: 'NanumSquare-R', sans-serif;
-    background-color: rgb(25, 25, 25);
-    color: rgb(224,224,224);
- }
+@font-face {
+  font-family: 'Calibre-Semibold';
+  src: url("../font/Calibre-Semibold.woff") format("woff");
+}
 
- 
+@font-face {
+  font-family: 'NanumSquare-B';
+  src: url("../font/NanumSquareB.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'NanumSquare-EB';
+  src: url("../font/NanumSquareEB.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'NanumSquare-R';
+  src: url("../font/NanumSquareR.woff") format("woff");
+}
+
+
+body {
+  font-family: 'NanumSquare-R', sans-serif;
+  background-color: rgb(25, 25, 25);
+  color: rgb(224,224,224);
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 4rem;
+  letter-spacing: 0;
+  color: rgb(255,255,255);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 3rem;
+  line-height: 52px;
+  letter-spacing: 0;
+  color: rgb(255,255,255);
+  padding: 2.5rem;
+  font-weight: 600;
+  font-family: 'Calibre-Medium', 'NanumSquare-R', sans-serif;
+}
+
+h4 {
+font-size: 1.75rem;
+line-height: 2.5rem;
+letter-spacing: -.0625rem;
+font-weight: 700;
+}
