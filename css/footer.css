@@ -182,6 +182,15 @@ footer .md:after {
    .footer-bottom .footer-ci a {
       margin-left: 1.25rem;
    }
-         
+   /* Footer Grid CSS */
+   footer .md:before {
+      left: 0;
+      top: 0;
+      width: 50%;
+   }
+   footer .md:after {
+      right: 0;
+      width: 50%;
+   }
 
 }

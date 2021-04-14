@@ -151,7 +151,7 @@ header, a {
 @media (max-width: 1023px) {
    .header {
       padding: 1rem 3.3125rem .875rem 3.3125rem;
-      position: relative;
+      position: fixed;
    }
    .header .logo a img {
       width: 2.25rem;

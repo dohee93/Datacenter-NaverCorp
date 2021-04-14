@@ -333,6 +333,7 @@
    position: relative;
    transform: translateY(0);
    transition: transform 0.3s ease-in-out;
+   cursor: pointer;
 }
 .card-inner:hover {
    transform: translateY(-10px);
@@ -602,6 +603,9 @@
    position: relative;
 }
 /* Section 05 - item 01 */
+#section-05 ul li {
+   cursor: pointer;
+}
 #section-05 ul li:first-of-type {
    position: absolute;
    width: 50%;
@@ -770,6 +774,7 @@
    width: 100%;
    height: 400px;
    position: relative;
+   cursor: pointer;
 }
 .section-06-slider .slide-card-wrap:nth-of-type(1) .slide-card-img {
    background-image: url(../img/s6-p1.jpg);
@@ -851,7 +856,7 @@
    #section-01 .visual {
       position: relative;
       height: 42.5rem;
-      width: 64rem;
+      width: 100%;
       margin: 3.75rem auto 0;
       display: block;
    }
@@ -886,6 +891,7 @@
       left: 0;
       top: -8.125rem;
       width: 18.75rem;
+      overflow: hidden;
    }
    #section-01 .visual li:nth-of-type(2) .visual-arrow {
       position: absolute;
@@ -1013,6 +1019,8 @@
    /* Section 06 */
    #section-06 {
       padding: 5rem 2.5rem 5rem 1.5625rem;
+      width: 100%;
+      overflow: hidden;
    }
    #section-06 .section-06-contents h3 {
       font-size: 1.75rem;
@@ -1095,6 +1103,20 @@
 @media (max-width: 1023px) {
    .container-wrap {
       padding-top: 0;
+   }
+   .container .grid-base-line:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      opacity: 1;
+      border-right: 1px solid#272727;
+      display: block;
+   }
+   .container .grid-base-line:after {
+      display: none;
    }
    /* Hero Section */
    .main-contents #hero {
@@ -1191,7 +1213,8 @@
       display: none;
    }
    .cards {
-      width: calc(21rem * 3);
+      width: 100%;
+      overflow: hidden;
    }
    .card {
       width: 20.9375rem;
@@ -1425,6 +1448,9 @@
       padding: 1.25rem 1.25rem 6.5625rem;
       height: auto;
    }
+   .card-inner:hover {
+      transform: translateY(0);
+   }
    /* Section 03 */
    /* Section 03 - video */
    #section-03 .s3-video {
@@ -1494,6 +1520,9 @@
       width: 100%;
       height: 11.25rem;
    }
+   #section-05 ul li:hover:before {
+      transform: scale(1);
+   }
    /* Section 05 - view more button */
    #section-05 ul li .btn-more {
       width: 17.1875rem;
@@ -1538,5 +1567,17 @@
    }
    .section-06-slider .slide-card-wrap:nth-of-type(3) .slide-card-title {
       margin-bottom: 0.625rem;
+   }
+   .section-06-slider .slide-card-wrap .slide-card-title {
+      font-size: 1.25rem;
+   }
+   .slide-card-wrap:hover {
+      transform: translateY(0);
+   }
+}
+
+@media (max-width: 374px){
+   html {
+      font-size: 14px;
    }
 }
