@@ -26,7 +26,9 @@ header, a {
    right: auto;
    bottom: auto;
 }
-
+.m-logo-svg {
+   display: none;
+}
 /* Header GNB CSS */
 .header .gnb ul {
    text-align: center;
@@ -63,6 +65,7 @@ header, a {
    font-size: .875rem;
    line-height: 2.0625rem;
    transform: translateY(.2em);
+   cursor: pointer;
 }
 .header .lang a:first-child {
    margin-left: 0;
@@ -129,4 +132,50 @@ header, a {
 .gnb ul .gnb-item > ul li:hover a:after {
    width: 100%;
 }
+.switcher {
+   display: none;
+}
 
+@media (max-width: 1359px) {
+   .header .gnb ul .gnb-item:first-child {
+      margin-left: 2.5rem;
+   }
+   .header .gnb ul .gnb-item {
+      padding: 1.275rem 2.5rem .875rem 0;
+   }
+   .gnb ul .gnb-item > ul {
+      width: 600%;
+   }
+}
+
+@media (max-width: 1023px) {
+   .header {
+      padding: 1rem 3.3125rem .875rem 3.3125rem;
+      position: fixed;
+   }
+   .header .logo a img {
+      width: 2.25rem;
+      height: 2.25rem;
+      left: 1.25rem;
+      top: 0.875rem;
+   }
+   .logo-svg {
+      display: none;
+   }
+   .m-logo-svg {
+      display: block;
+   }
+   .header .gnb {
+      display: none;
+   }
+   .switcher {
+      display: block;
+      width: 1.75rem;
+      height: 1.75rem;
+      background-image: url(../img/switcher.svg);
+      background-size: contain;
+      right: 1.125rem;
+      top: 1.125rem;
+      position: absolute;
+   }
+}
