@@ -156,6 +156,7 @@
    height: 55.375vw;
    width: auto;
    margin: 0;
+   overflow: hidden;
 }
 #section-01 .visual li {
    position: absolute;
@@ -1413,7 +1414,7 @@
    }
    #section-01 .visual li:nth-of-type(2) .visual-arrow {
       position: absolute;
-      bottom: -4.25rem;
+      bottom: -5.25rem;
       top: auto;
    }
    /* Section01 - li (3) */
